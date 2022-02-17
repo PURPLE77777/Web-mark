@@ -16,14 +16,12 @@
     "url": "https://github.com/PURPLE77777/Web-mark/issues"
   },
   "homepage": "https://github.com/PURPLE77777/Web-mark#readme",
-  "devDependencies": {
-    "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2"
-  },
   "dependencies": {
     "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.5.3"
+    "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
