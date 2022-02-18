@@ -1,1 +1,14 @@
-<header><h2>Header</h2></header>
+<header>
+    <div class="header-wrap">
+        <div class="logo"><a href="#"><img src="views/img/logo.png" /></a></div>
+        <div class="menu">
+            <ul class="menu-list">
+                {{#each nav}}
+                    <li class="list-item">
+                        <a href="{{this.href}}">{{this.text}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</header>

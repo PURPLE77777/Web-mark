@@ -1,0 +1,42 @@
+header {
+    .header-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-color: white;
+        margin-top: 40px;
+        .logo {
+            a {
+                display: block;
+                height: 70px;
+                img {
+                    height: inherit;
+                }
+            }
+        }
+        .menu {
+            .menu-list {
+                display: flex;
+                flex-flow: row nowrap;
+                list-style: none;
+                margin: 0px;
+                height: 100%;
+                .list-item {
+                    font-size: 16pt;
+                    a {
+                        color: #8d8d8d;
+                        line-height: 19px;
+                        display: block;
+                        padding: 26px;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                    }
+                    a:hover {
+                        color: white;
+                        background-color: gray;
+                    }
+                }
+            }
+        }
+    }
+}

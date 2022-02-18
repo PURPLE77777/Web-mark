@@ -1,0 +1,22 @@
+$font-style: "Roboto", sans-serif;
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: $font-style;
+    .root {
+        height: inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d9d9d9;
+        .container {
+            width: 1600px;
+            height: inherit;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+        }
+    }
+}
