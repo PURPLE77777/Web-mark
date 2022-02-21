@@ -1,8 +1,26 @@
-<h1>Home</h1>
-<div class="content">
-    <ul>
-        {{#each stock}}
-            <li>{{this.title}}</li>
-        {{/each}}
-    </ul>
+<div class="products-container">
+    <div class="breadcrumbs">
+        <ul class="bread-list">
+            {{#each breadcrumbs}}
+                {{#if @last}}
+                    <span>{{this.text}}</span>
+                {{else}}
+                    <li class="bread-item">
+                        <a href="{{this.href}}">{{this.text}}</a>
+                    </li>
+                    <li class="bread-item">
+                        <span>></span>
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+    <h1 class="product-head">DAF Trucks</h1>
+    <div class="content">
+        <ul>
+            {{#each stock}}
+                <li>{{this.title}}</li>
+            {{/each}}
+        </ul>
+    </div>
 </div>

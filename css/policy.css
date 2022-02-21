@@ -2,6 +2,10 @@
   text-align: center;
 }
 
-.policy p a {
+.policy p .policy-link {
   text-decoration: none;
+}
+
+.policy p .policy-link:hover {
+  text-decoration: underline;
 }

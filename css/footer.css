@@ -1,3 +1,130 @@
 footer .footer-wrap {
   background-color: white;
+  padding: 39px 0px 38px 19px;
+}
+
+footer .footer-wrap .company-connections {
+  color: #4f4f4f;
+}
+
+footer .footer-wrap .company-connections .logo-name-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-wrap .company-connections .logo-name-company .company-logo {
+  width: 40px;
+  height: 40px;
+}
+
+footer .footer-wrap .company-connections .logo-name-company .company-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0px;
+}
+
+footer .footer-wrap .company-connections .company-address-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-top: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-wrap .company-connections .company-address-info .company-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+footer .footer-wrap .company-connections .company-address-info .company-address .geo-icon {
+  text-align: center;
+  width: 40px;
+}
+
+footer .footer-wrap .company-connections .company-address-info .company-address .address-wrap {
+  width: 226px;
+}
+
+footer .footer-wrap .company-connections .company-address-info .company-address .address-wrap .address {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+footer .footer-wrap .company-connections .company-address-info .info {
+  width: 561px;
+  font-size: 14px;
+  line-height: 126.3%;
+  color: #4f4f4f;
+}
+
+footer .footer-wrap .company-connections .company-tele {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-top: 11px;
+}
+
+footer .footer-wrap .company-connections .company-tele .tele-icon {
+  text-align: center;
+  width: 40px;
+}
+
+footer .footer-wrap .company-connections .company-tele .number-wrap .number {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+footer .footer-wrap .company-connections .company-socials {
+  margin-top: 16px;
+}
+
+footer .footer-wrap .company-connections .company-socials .socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer .footer-wrap .company-connections .company-socials .socials-list .social-item {
+  margin: 0px 5px;
+  border-radius: 50%;
+  height: 30px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+footer .footer-wrap .company-connections .company-socials .socials-list .social-item:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px black;
+          box-shadow: 0px 0px 10px 0px black;
 }

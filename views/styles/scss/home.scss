@@ -1,0 +1,19 @@
+.products-container {
+    .breadcrumbs {
+        .bread-list {
+            display: flex;
+            flex-flow: row nowrap;
+            list-style: none;
+            .bread-item {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .product-head {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}

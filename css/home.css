@@ -1,0 +1,20 @@
+.products-container .breadcrumbs .bread-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  list-style: none;
+}
+
+.products-container .breadcrumbs .bread-list .bread-item a {
+  text-decoration: none;
+}
+
+.products-container .product-head {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
