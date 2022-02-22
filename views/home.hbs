@@ -17,10 +17,63 @@
     </div>
     <h1 class="product-head">DAF Trucks</h1>
     <div class="content">
-        <ul>
-            {{#each stock}}
-                <li>{{this.title}}</li>
-            {{/each}}
-        </ul>
+        <div class="selectors">
+            <form>
+
+            </form>
+        </div>
+        <div class="products">
+            <ul class="products-list">
+                {{#each stock}}
+                    <li class="product-item">
+                        <div class="product-item_wrap">
+                            <div class="product-img">
+                                <a href="{{this.href}}">
+                                    <img src="views/img/{{this.image}}" />
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="main-info">
+                                    <div class="title_price">
+                                        <a
+                                            class="product-title"
+                                            href="{{this.href}}"
+                                        >
+                                            {{this.title}}
+                                        </a>
+                                        <span class="product-price">
+                                            {{this.price_currency}}
+                                            {{this.price}}
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="desc">
+                                            Item Description: Lorem ipsum dolor
+                                            sit amet consectetur adipisicing
+                                            elit. Nulla quis distinctio, officia
+                                            tenetur a eaque deleniti, impedit
+                                            accusamus, alias provident sint id
+                                            odio neque laudantium! Saepe
+                                            quisquam libero soluta itaque?
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product-tags">
+                                    <ul class="tags-list">
+                                        <li class="tag">{{this.year}}</li>
+                                        <li class="tag">{{this.mileage}}
+                                            {{this.mileage_measure}}</li>
+                                        <li
+                                            class="tag"
+                                        >{{this.axle_configuration}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+
+        </div>
     </div>
 </div>

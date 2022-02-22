@@ -2,7 +2,7 @@ $font-style: "Roboto", sans-serif;
 html,
 body {
     margin: 0px;
-    height: 100%;
+    max-height: 100%;
     font-family: $font-style;
     .root {
         height: inherit;

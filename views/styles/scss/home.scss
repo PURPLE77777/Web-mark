@@ -1,3 +1,5 @@
+$form-width: 270px;
+$product-margin-left: 20px;
 .products-container {
     .breadcrumbs {
         .bread-list {
@@ -15,5 +17,110 @@
         font-weight: bold;
         font-size: 22px;
         line-height: 26px;
+        margin-left: calc($form-width + $product-margin-left);
+    }
+    .content {
+        display: flex;
+        flex-flow: row nowrap;
+        .selectors {
+            min-width: $form-width;
+            height: 600px;
+            background-color: #ffffff;
+        }
+        .products {
+            width: 100%;
+            margin-left: $product-margin-left;
+            .products-list {
+                display: flex;
+                flex-flow: column nowrap;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                .product-item {
+                    padding: 16px;
+                    background-color: #ffffff;
+                    margin-top: 16px;
+                    .product-item_wrap {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        .product-img {
+                            width: 224px;
+                            height: 168px;
+                            a {
+                                width: inherit;
+                                height: inherit;
+                                img {
+                                    width: inherit;
+                                    height: inherit;
+                                }
+                            }
+                        }
+                        .product-info {
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: space-between;
+                            list-style: none;
+                            margin-left: 16px;
+                            width: 100%;
+                            .main-info {
+                                .title_price {
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    justify-content: space-between;
+                                    .product-title {
+                                        font-weight: bold;
+                                        font-size: 18px;
+                                        line-height: 21px;
+                                        text-decoration: none;
+                                        color: #000000;
+                                    }
+                                    .product-title:hover {
+                                        text-decoration: underline;
+                                    }
+                                    .product-price {
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                    }
+                                }
+                                .description {
+                                    margin-top: 7px;
+                                    max-width: 600px;
+                                    .desc {
+                                        font-weight: 300;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                    }
+                                }
+                            }
+                            .product-tags {
+                                .tags-list {
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    list-style: none;
+                                    padding: 0px;
+                                    .tag {
+                                        background-color: #c4c4c4;
+                                        font-weight: 300;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        text-align: center;
+                                        color: #ffffff;
+                                        padding: 5px;
+                                        margin-left: 16px;
+                                    }
+                                    .tag:first-child {
+                                        margin-left: 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-item:first-child {
+                    margin-top: 0px;
+                }
+            }
+        }
     }
 }
