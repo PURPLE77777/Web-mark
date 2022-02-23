@@ -2,6 +2,7 @@ const express = require("express");
 const expressHbs = require("express-handlebars");
 const hbs = require("hbs");
 const fs = require("fs");
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -87,6 +88,4 @@ app.get("/", (req, res) => {
     res.render("home.hbs", JSON.parse(content));
 });
 
-app.listen(3000, function () {
-    console.log("Example app listening on port 3000!");
-});
+app.listen(PORT);
