@@ -26,7 +26,7 @@ body .root {
 
 html .root .container,
 body .root .container {
-  width: 70%;
+  width: 1140px;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;

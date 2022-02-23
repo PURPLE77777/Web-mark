@@ -3,7 +3,7 @@
         <ul class="bread-list">
             {{#each breadcrumbs}}
                 {{#if @last}}
-                    <span>{{this.text}}</span>
+                    <li class="bread-item">{{this.text}}</li>
                 {{else}}
                     <li class="bread-item">
                         <a href="{{this.href}}">{{this.text}}</a>
@@ -17,12 +17,126 @@
     </div>
     <h1 class="product-head">DAF Trucks</h1>
     <div class="content">
-        <div class="selectors">
-            <form>
-
-            </form>
+        <div class="search">
+            <div class="search-area">
+                <div class="numbers-founder">
+                    <output class="numbers-found"></output>
+                    <span class="subtext">Results Found</span>
+                </div>
+                <hr />
+                <div class="form-wrap">
+                    <form class="search-params">
+                        <div class="axle-param">
+                            <div class="axle-param-btn">
+                                <span class="param-title">Axle configuration</span>
+                                <button
+                                    class="btn-param"
+                                    type="button"
+                                >&#11167;</button>
+                            </div>
+                            <div class="axle-params">
+                                <label>
+                                    <input
+                                        class="axle-input"
+                                        type="checkbox"
+                                        value="6x2"
+                                    />
+                                    <span class="param-value">6x2</span>
+                                </label>
+                                <label>
+                                    <input
+                                        class="axle-input"
+                                        type="checkbox"
+                                        value="4x4"
+                                    />
+                                    <span class="param-value">4x4</span>
+                                </label>
+                                <label>
+                                    <input
+                                        class="axle-input"
+                                        type="checkbox"
+                                        value="4x2"
+                                    />
+                                    <span class="param-value">4x2</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="price-param">
+                            <div class="price-param-btn">
+                                <span class="param-title">Price</span>
+                                <button
+                                    class="btn-param"
+                                    type="button"
+                                >&#11167;</button>
+                            </div>
+                            <div class="price-params">
+                                <label>
+                                    <input
+                                        class="price-input"
+                                        type="text"
+                                        placeholder="min"
+                                    />
+                                </label>
+                                <label>
+                                    <input
+                                        class="price-input"
+                                        type="text"
+                                        placeholder="max"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="keyword-param">
+                            <div class="keyword-param-btn">
+                                <span class="param-title">Keyword</span>
+                                <button
+                                    class="btn-param"
+                                    type="button"
+                                >&#11167;</button>
+                            </div>
+                            <div class="keyword-params">
+                                <label>
+                                    <input
+                                        class="keyword-input"
+                                        type="text"
+                                        placeholder="Keyword"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn-search" type="">SEARCH</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="products">
+            <div class="pages">
+                <div class="btns">
+                    <ul class="btns-list">
+                        <li class="btn-item">
+                            <button>&#11164;</button>
+                        </li>
+                        <li class="btn-item">
+                            <button>1</button>
+                        </li>
+                        <li class="btn-item">
+                            <button>2</button>
+                        </li>
+                        <li class="btn-item">
+                            <button>&#11166;</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sorting">
+                    Sort by
+                    <select class="sort">
+                        <option selected hidden>Sort options</option>
+                        <option></option>
+                        <option value="price">Price</option>
+                        <option value="name">Name</option>
+                    </select>
+                </div>
+            </div>
             <ul class="products-list">
                 {{#each stock}}
                     <li class="product-item">
@@ -73,7 +187,57 @@
                     </li>
                 {{/each}}
             </ul>
-
+            <div class="pages">
+                <div class="btns">
+                    <ul class="btns-list">
+                        <li class="btn-item">
+                            <button>&#11164;</button>
+                        </li>
+                        <li class="btn-item">
+                            <button>1</button>
+                        </li>
+                        <li class="btn-item">
+                            <button>2</button>
+                        </li>
+                        <li class="btn-item">
+                            <button>&#11166;</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sorting">
+                    Sort by
+                    <select class="sort">
+                        <option selected hidden>Sort options</option>
+                        <option></option>
+                        <option value="price">Price</option>
+                        <option value="name">Name</option>
+                    </select>
+                </div>
+            </div>
+            <div class="some-info">
+                <span class="info">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet quos ullam atque accusantium ratione molestias soluta,
+                    provident nobis, assumenda dolorum voluptas incidunt
+                    inventore quia reiciendis quis? Quis quo molestias repellat?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Assumenda et at eveniet! Fugiat velit unde necessitatibus?
+                    Debitis illo vero aut. Iusto dolores, cupiditate error
+                    expedita veniam laborum repudiandae aspernatur eos?<br /><br
+                    />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet quos ullam atque accusantium ratione molestias soluta,
+                    <a href="#">link</a>
+                    provident nobis, assumenda dolorum voluptas incidunt
+                    inventore quia reiciendis quis? Quis quo molestias repellat?<br
+                    /><br />
+                    Iste, aliquid ducimus! Delectus in nisi quaerat temporibus
+                    blanditiis, molestias deleniti ea illum laudantium numquam.
+                    Laborum vero eligendi minus recusandae culpa sequi
+                    exercitationem iusto, ipsum sed suscipit fuga molestias
+                    veritatis!
+                </span>
+            </div>
         </div>
     </div>
 </div>

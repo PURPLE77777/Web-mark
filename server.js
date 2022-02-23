@@ -19,16 +19,6 @@ hbs.registerPartials(__dirname + "/views/partials");
 app.use(express.json());
 app.use(express.static(__dirname));
 
-app.get("/page1", (req, res) => {
-    const content = fs.readFileSync("./dataset.json", "utf-8");
-    res.render("page1", JSON.parse(content));
-});
-
-app.get("/page2", (req, res) => {
-    const content = fs.readFileSync("./dataset.json", "utf-8");
-    res.render("page2", JSON.parse(content));
-});
-
 app.get("/", (req, res) => {
     const content = fs.readFileSync("./dataset.json", "utf-8");
     res.render("home.hbs", JSON.parse(content));

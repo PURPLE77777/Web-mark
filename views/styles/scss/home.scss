@@ -6,9 +6,15 @@ $product-margin-left: 20px;
             display: flex;
             flex-flow: row nowrap;
             list-style: none;
+            padding: 0px;
             .bread-item {
+                margin: 0px 10px;
                 a {
+                    color: #2f80ed;
                     text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
                 }
             }
         }
@@ -17,15 +23,191 @@ $product-margin-left: 20px;
         font-weight: bold;
         font-size: 22px;
         line-height: 26px;
-        margin-left: calc($form-width + $product-margin-left);
+        margin-left: calc(270px + 20px);
     }
     .content {
         display: flex;
         flex-flow: row nowrap;
-        .selectors {
+        .search {
             min-width: $form-width;
-            height: 600px;
-            background-color: #ffffff;
+            .search-area {
+                background-color: #ffffff;
+                padding: 16px;
+                .numbers-founder {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #333333;
+                    .numbers-found {
+                    }
+                    .subtext {
+                    }
+                }
+                hr {
+                }
+                .form-wrap {
+                    .search-params {
+                        .axle-param {
+                            display: flex;
+                            flex-flow: column nowrap;
+                            margin-top: 15px;
+                            .axle-param-btn {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: space-between;
+                                .param-title {
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #333333;
+                                }
+                                .btn-param {
+                                    border: none;
+                                    background-color: transparent;
+                                    cursor: pointer;
+                                }
+                                .btn-param:hover {
+                                    background-color: #56ccf2;
+                                }
+                            }
+                            .axle-params {
+                                display: flex;
+                                flex-flow: column nowrap;
+                                overflow: hidden;
+                                height: 0px;
+                                transition: 0.3s all linear;
+                                margin-top: 11px;
+                                label {
+                                    margin-top: 11px;
+                                    cursor: pointer;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    .axle-input {
+                                        margin: 0px 8px 0px 0px;
+                                        cursor: inherit;
+                                        width: 19px;
+                                        height: 19px;
+                                    }
+                                    .param-value {
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        color: #4f4f4f;
+                                    }
+                                }
+                            }
+                            .open {
+                                height: 90px;
+                            }
+                            .axle-params:first-child {
+                                margin-top: 0px;
+                            }
+                        }
+                        .price-param {
+                            margin-top: 17px;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            .price-param-btn {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: space-between;
+                                .param-title {
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #333333;
+                                }
+                                .btn-param {
+                                    border: none;
+                                    background-color: transparent;
+                                    cursor: pointer;
+                                }
+                                .btn-param:hover {
+                                    background-color: #56ccf2;
+                                }
+                            }
+                            .price-params {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                overflow: hidden;
+                                margin-top: 11px;
+                                height: 0px;
+                                transition: 0.3s all linear;
+                                label {
+                                    .price-input {
+                                        padding: 4px;
+                                        margin: 0px;
+                                        width: 102px;
+                                        height: 35px;
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        border: 1px solid #bdbdbd;
+                                    }
+                                }
+                                label:last-child {
+                                    margin-left: 13px;
+                                }
+                            }
+                            .open {
+                                height: 45px;
+                            }
+                        }
+                        .keyword-param {
+                            margin-top: 17px;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            .keyword-param-btn {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: space-between;
+                                .param-title {
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #333333;
+                                }
+                                .btn-param {
+                                    border: none;
+                                    background-color: transparent;
+                                    cursor: pointer;
+                                }
+                                .btn-param:hover {
+                                    background-color: #56ccf2;
+                                }
+                            }
+                            .keyword-params {
+                                overflow: hidden;
+                                margin-top: 11px;
+                                height: 0px;
+                                transition: 0.3s all linear;
+                                label {
+                                    width: 100%;
+                                    .keyword-input {
+                                        padding: 4px;
+                                        margin: 0px;
+                                        height: 35px;
+                                        width: 228px;
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        border: 1px solid #bdbdbd;
+                                    }
+                                }
+                            }
+                            .open {
+                                height: 45px;
+                            }
+                        }
+                        .btn-search {
+                            margin-top: 18px;
+                            background-color: #56ccf2;
+                            width: 100%;
+                            border: none;
+                            height: 35px;
+                            color: #ffffff;
+                            cursor: pointer;
+                        }
+                        .btn-search:hover {
+                            box-shadow: 0px 0px 15px 0px #56ccf2;
+                        }
+                    }
+                }
+            }
         }
         .products {
             width: 100%;
@@ -34,7 +216,7 @@ $product-margin-left: 20px;
                 display: flex;
                 flex-flow: column nowrap;
                 list-style-type: none;
-                margin: 0px;
+                margin: 16px 0px;
                 padding: 0px;
                 .product-item {
                     padding: 16px;
@@ -67,6 +249,7 @@ $product-margin-left: 20px;
                                     display: flex;
                                     flex-flow: row nowrap;
                                     justify-content: space-between;
+                                    align-items: baseline;
                                     .product-title {
                                         font-weight: bold;
                                         font-size: 18px;
@@ -85,7 +268,7 @@ $product-margin-left: 20px;
                                 }
                                 .description {
                                     margin-top: 7px;
-                                    max-width: 600px;
+                                    max-width: 399px;
                                     .desc {
                                         font-weight: 300;
                                         font-size: 14px;
@@ -119,6 +302,66 @@ $product-margin-left: 20px;
                 }
                 .product-item:first-child {
                     margin-top: 0px;
+                }
+            }
+            .pages {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                .btns {
+                    .btns-list {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        list-style: none;
+                        padding: 0px;
+                        margin: 0px;
+                        .btn-item {
+                            margin-left: 16px;
+                            button {
+                                font-size: 16px;
+                                line-height: 19px;
+                                width: 35px;
+                                height: 35px;
+                                cursor: pointer;
+                                background-color: #ffffff;
+                                border: none;
+                            }
+                            button:hover {
+                                background-color: #56ccf2;
+                            }
+                        }
+                        .btn-item:first-child {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                .sorting {
+                    height: 35px;
+                    .sort {
+                        position: relative;
+                        border: 1px solid #bdbdbd;
+                        height: inherit;
+                        width: 207px;
+                        color: #828282;
+                        font-size: 16px;
+                        line-height: 19px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .some-info {
+                margin: 24px 0px;
+                max-width: 565px;
+                .info {
+                    a {
+                        color: #2f80ed;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

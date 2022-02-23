@@ -4,6 +4,7 @@
 
 .policy p .policy-link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .policy p .policy-link:hover {
