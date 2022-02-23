@@ -20,12 +20,15 @@
         <div class="search">
             <div class="search-area">
                 <div class="numbers-founder">
-                    <output class="numbers-found"></output>
-                    <span class="subtext">Results Found</span>
+                    <div class="nbrs-found">
+                        <output class="numbers-found">{{stock.length}}</output>
+                        <span class="subtext">Results Found</span>
+                    </div>
+                    <button id="burger-search">X</button>
                 </div>
                 <hr />
                 <div class="form-wrap">
-                    <form class="search-params">
+                    <form class="search-params" type="get" action="/filter">
                         <div class="axle-param">
                             <div class="axle-param-btn">
                                 <span class="param-title">Axle configuration</span>
@@ -38,6 +41,7 @@
                                 <label>
                                     <input
                                         class="axle-input"
+                                        name="axle"
                                         type="checkbox"
                                         value="6x2"
                                     />
@@ -46,6 +50,7 @@
                                 <label>
                                     <input
                                         class="axle-input"
+                                        name="axle"
                                         type="checkbox"
                                         value="4x4"
                                     />
@@ -54,6 +59,7 @@
                                 <label>
                                     <input
                                         class="axle-input"
+                                        name="axle"
                                         type="checkbox"
                                         value="4x2"
                                     />
@@ -75,6 +81,7 @@
                                         class="price-input"
                                         type="text"
                                         placeholder="min"
+                                        name="min-price"
                                     />
                                 </label>
                                 <label>
@@ -82,6 +89,7 @@
                                         class="price-input"
                                         type="text"
                                         placeholder="max"
+                                        name="max-price"
                                     />
                                 </label>
                             </div>
@@ -100,14 +108,18 @@
                                         class="keyword-input"
                                         type="text"
                                         placeholder="Keyword"
+                                        name="keyword"
                                     />
                                 </label>
                             </div>
                         </div>
-                        <button class="btn-search" type="">SEARCH</button>
+                        <button class="btn-search" type="submit">SEARCH</button>
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="open-search">
+            <button id="open-search">></button>
         </div>
         <div class="products">
             <div class="pages">

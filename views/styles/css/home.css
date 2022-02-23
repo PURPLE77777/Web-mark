@@ -30,6 +30,12 @@
   margin-left: calc(270px + 20px);
 }
 
+@media (max-width: 1220px) {
+  .products-container .product-head {
+    margin-left: 0px;
+  }
+}
+
 .products-container .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +53,8 @@
 .products-container .content .search .search-area {
   background-color: #ffffff;
   padding: 16px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .products-container .content .search .search-area .numbers-founder {
@@ -54,6 +62,39 @@
   font-size: 16px;
   line-height: 19px;
   color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-container .content .search .search-area .numbers-founder #burger-search {
+  position: relative;
+  opacity: 0;
+  font-size: 16pt;
+  background-color: #ffffff;
+  border: none;
+  text-align: center;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.products-container .content .search .search-area .numbers-founder #burger-search:hover {
+  color: #ffffff;
+  background-color: #828282;
+}
+
+@media (max-width: 1220px) {
+  .products-container .content .search .search-area .numbers-founder #burger-search {
+    opacity: 1;
+  }
 }
 
 .products-container .content .search .search-area .form-wrap .search-params .axle-param {
@@ -209,6 +250,12 @@
   border: 1px solid #bdbdbd;
 }
 
+@media (max-width: 1220px) {
+  .products-container .content .search .search-area .form-wrap .search-params .price-param .price-params label .price-input {
+    width: 93%;
+  }
+}
+
 .products-container .content .search .search-area .form-wrap .search-params .price-param .price-params label:last-child {
   margin-left: 13px;
 }
@@ -265,15 +312,11 @@
   transition: 0.3s all linear;
 }
 
-.products-container .content .search .search-area .form-wrap .search-params .keyword-param .keyword-params label {
-  width: 100%;
-}
-
 .products-container .content .search .search-area .form-wrap .search-params .keyword-param .keyword-params label .keyword-input {
   padding: 4px;
   margin: 0px;
   height: 35px;
-  width: 228px;
+  width: 96%;
   font-size: 16px;
   line-height: 19px;
   border: 1px solid #bdbdbd;
@@ -296,6 +339,48 @@
 .products-container .content .search .search-area .form-wrap .search-params .btn-search:hover {
   -webkit-box-shadow: 0px 0px 15px 0px #56ccf2;
           box-shadow: 0px 0px 15px 0px #56ccf2;
+}
+
+@media (max-width: 1220px) {
+  .products-container .content .search .open-search-area {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .products-container .content .search {
+    z-index: 1;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    position: fixed;
+    top: 253px;
+    left: -455px;
+  }
+}
+
+.products-container .content .open-search {
+  display: none;
+  position: fixed;
+  top: 253px;
+  left: 0px;
+}
+
+.products-container .content .open-search #open-search {
+  font-size: 32pt;
+  background-color: #828282;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.products-container .content .open-search #open-search:hover {
+  background-color: #363636;
+}
+
+@media (max-width: 1220px) {
+  .products-container .content .open-search {
+    display: block;
+  }
 }
 
 .products-container .content .products {
@@ -518,4 +603,13 @@
 
 .products-container .content .products .some-info .info a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1220px) {
+  .products-container .content {
+    margin: 0px 20px;
+  }
+  .products-container .content .products {
+    margin-left: 0px;
+  }
 }

@@ -39,3 +39,10 @@ body .root .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+@media (max-width: 1220px) {
+  html .root .container,
+  body .root .container {
+    width: 100%;
+  }
+}

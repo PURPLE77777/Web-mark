@@ -25,6 +25,11 @@ $product-margin-left: 20px;
         line-height: 26px;
         margin-left: calc(270px + 20px);
     }
+    @media (max-width: 1220px) {
+        .product-head {
+            margin-left: 0px;
+        }
+    }
     .content {
         display: flex;
         flex-flow: row nowrap;
@@ -33,14 +38,39 @@ $product-margin-left: 20px;
             .search-area {
                 background-color: #ffffff;
                 padding: 16px;
+                transition: 0.3s all ease;
                 .numbers-founder {
                     font-weight: bold;
                     font-size: 16px;
                     line-height: 19px;
                     color: #333333;
-                    .numbers-found {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    .nbrs-found {
+                        .numbers-found {
+                        }
+                        .subtext {
+                        }
                     }
-                    .subtext {
+                    #burger-search {
+                        position: relative;
+                        opacity: 0;
+                        font-size: 16pt;
+                        background-color: #ffffff;
+                        border: none;
+                        text-align: center;
+                        transition: 0.3s all ease;
+                        cursor: pointer;
+                    }
+                    #burger-search:hover {
+                        color: #ffffff;
+                        background-color: #828282;
+                    }
+                    @media (max-width: 1220px) {
+                        #burger-search {
+                            opacity: 1;
+                        }
                     }
                 }
                 hr {
@@ -140,6 +170,11 @@ $product-margin-left: 20px;
                                         line-height: 19px;
                                         border: 1px solid #bdbdbd;
                                     }
+                                    @media (max-width: 1220px) {
+                                        .price-input {
+                                            width: 93%;
+                                        }
+                                    }
                                 }
                                 label:last-child {
                                     margin-left: 13px;
@@ -177,12 +212,11 @@ $product-margin-left: 20px;
                                 height: 0px;
                                 transition: 0.3s all linear;
                                 label {
-                                    width: 100%;
                                     .keyword-input {
                                         padding: 4px;
                                         margin: 0px;
                                         height: 35px;
-                                        width: 228px;
+                                        width: 96%;
                                         font-size: 16px;
                                         line-height: 19px;
                                         border: 1px solid #bdbdbd;
@@ -207,6 +241,45 @@ $product-margin-left: 20px;
                         }
                     }
                 }
+            }
+            @media (max-width: 1220px) {
+                .search-area {
+                    // width: 350px;
+                    // overflow: hidden;
+                }
+                .open-search-area {
+                    width: 350px;
+                }
+            }
+        }
+        @media (max-width: 1220px) {
+            .search {
+                z-index: 1;
+                transition: 0.3s all ease;
+                position: fixed;
+                top: 253px;
+                left: -455px;
+            }
+        }
+        .open-search {
+            display: none;
+            position: fixed;
+            top: 253px;
+            left: 0px;
+            #open-search {
+                font-size: 32pt;
+                background-color: #828282;
+                border: none;
+                color: #ffffff;
+                cursor: pointer;
+            }
+            #open-search:hover {
+                background-color: #363636;
+            }
+        }
+        @media (max-width: 1220px) {
+            .open-search {
+                display: block;
             }
         }
         .products {
@@ -363,6 +436,12 @@ $product-margin-left: 20px;
                         text-decoration: underline;
                     }
                 }
+            }
+        }
+        @media (max-width: 1220px) {
+            margin: 0px 20px;
+            .products {
+                margin-left: 0px;
             }
         }
     }

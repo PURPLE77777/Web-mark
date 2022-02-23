@@ -18,5 +18,10 @@ body {
             flex-flow: column nowrap;
             justify-content: space-between;
         }
+        @media (max-width: 1220px) {
+            .container {
+                width: 100%;
+            }
+        }
     }
 }
